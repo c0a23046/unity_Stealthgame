@@ -1,0 +1,59 @@
+# Unity公式設定（不要なフォルダ・キャッシュを無視）
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+*.log
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+mono_crash.*
+.vs/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Blenderやその他一時ファイル
+*.blend1
+*.blend1.meta
+
+# 大きいファイル（無視する）
+Assets/**/*.psd
+Assets/**/*.fbx
+Assets/**/*.png
+Assets/**/*.jpg
+Assets/**/*.tga
+Assets/**/*.mp3
+Assets/**/*.wav
+Assets/**/*.ogg
+
+# Unityの自動生成ファイル
+Assets/**/*.meta   # スクリプトやシーンの紐付けに必要なものは残す
+ServerData/
+Assets/StreamingAssets/aa*
+Assets/AddressableAssetsData/link.xml*
+Assets/Addressables_Temp*
+Assets/AddressableAssetsData/*/*.bin*
+Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db*
+Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers*
+
+# テスト自動生成シーン
+Assets/InitTestScene*.unity*
