@@ -26,7 +26,7 @@ public class Player1 : MonoBehaviour
 
     private List<GameObject> weapons = new List<GameObject>(); //武器を格納するリスト
     private int currentWeaponIndex = -1; //現在の武器（-1は未装備）
-    [SerializeField] private float mouseSensitivity = 1000f; 
+    public float mouseSensitivity; 
     //[SerializeField] private float keyRotationSpeed = 100f;
 
 
