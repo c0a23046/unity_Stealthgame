@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8374176786735729313}
   m_Layer: 0
   m_Name: BulletRoot
-  m_TagString: Untagged
+  m_TagString: Bullet_handgun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

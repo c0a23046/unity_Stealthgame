@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Player1 : MonoBehaviour
 {
+    public int HP;
     public float PlayerSpeed; //プレイヤーの移動速度を管理する変数
     public float CrouchSpeed; //プレイヤーのしゃがみ歩き時の移動速度を管理する変数
     public float RotationSpeed; //プレイヤーの視界速度を管理する変数
@@ -380,11 +381,22 @@ public class Player1 : MonoBehaviour
     void EquipWeapon(int index)
     {
         Debug.Log("EquipWeapon呼ばれた index=" + index + " weapons.Count=" + weapons.Count);
+
         for (int i = 0; i < weapons.Count; i++)
         {
             bool active = (i == index);
+
+            // モデル表示のON/OFF
             weapons[i].SetActive(active);
             Debug.Log("EquipWeapon: " + weapons[i].name + " active=" + active);
+
+            // GunスクリプトのON/OFF切り替え
+            Gun gunComp = weapons[i].GetComponent<Gun>();
+            if (gunComp != null)
+            {
+                gunComp.enabled = active;
+                gunComp.isEquipped = active;  // これで動作制御
+            }
         }
     }
 }

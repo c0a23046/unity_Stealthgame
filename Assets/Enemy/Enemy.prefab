@@ -156,7 +156,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.51
   m_Height: 2.58
   m_Direction: 1
   m_Center: {x: 0, y: 1.3, z: 0}
@@ -172,10 +172,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b766d53afd644c847bd1256aadd2fd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 0
   moveSpeed: 0.005
   moveTime: 0
   waitTime: 0
   EnemyAnimator: {fileID: 5579987152088463312}
+  stopDistance: 0
 --- !u!135 &2733178901317276071
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -195,5 +197,5 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 7
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 4.69
+  m_Center: {x: 0, y: 0, z: 4.22}

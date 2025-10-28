@@ -33,6 +33,7 @@ public class Gun : MonoBehaviour
     bool shooting, readyToShoot;
     public bool reloading;
     public bool allowInvoke = true;
+    public bool isEquipped = false; // この銃が現在装備中なら true
 
 
     void Start()
@@ -45,6 +46,7 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isEquipped) return;  // 持っていない銃は動かさない
         InputHandler();
     }
 

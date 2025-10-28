@@ -1563,6 +1563,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1929421219}
     - target: {fileID: 2486074123323872833, guid: 776474911ed5e084d845e07b2806424d, type: 3}
+      propertyPath: isEquipped
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2486074123323872833, guid: 776474911ed5e084d845e07b2806424d, type: 3}
       propertyPath: reloadTime
       value: 3
       objectReference: {fileID: 0}
@@ -1871,6 +1875,10 @@ PrefabInstance:
     - target: {fileID: 1795182134594120066, guid: 45c8a8c0b66325a4e835e83dbd7aa0b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -48.60726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993179277031720366, guid: 45c8a8c0b66325a4e835e83dbd7aa0b6, type: 3}
+      propertyPath: HP
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1993179277031720366, guid: 45c8a8c0b66325a4e835e83dbd7aa0b6, type: 3}
       propertyPath: Camera
@@ -2525,6 +2533,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2077295177872520759, guid: 668ae95d9e5a5074288c125fc0832b1d, type: 3}
+      propertyPath: HP
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077295177872520759, guid: 668ae95d9e5a5074288c125fc0832b1d, type: 3}
       propertyPath: moveTime
       value: 3
       objectReference: {fileID: 0}
@@ -2535,6 +2547,10 @@ PrefabInstance:
     - target: {fileID: 2077295177872520759, guid: 668ae95d9e5a5074288c125fc0832b1d, type: 3}
       propertyPath: moveSpeed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077295177872520759, guid: 668ae95d9e5a5074288c125fc0832b1d, type: 3}
+      propertyPath: stopDistance
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8185775657205047606, guid: 668ae95d9e5a5074288c125fc0832b1d, type: 3}
       propertyPath: m_Name

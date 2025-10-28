@@ -5,9 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Weapon
-  - Bullet
   - WeaponPickUp
   - Enemy
+  - Bullet_handgun
+  - Bullet
+  - Bullet_asarut
   layers:
   - Default
   - TransparentFX
