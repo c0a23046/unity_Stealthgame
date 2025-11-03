@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Player1 : MonoBehaviour
 {
-    public int HP;
+    public int HP; //プレイヤーの現在の体力
+    public int MaxHP; //プレイヤーの初期時の体力
+    public Image HPGage;
+
     public float PlayerSpeed; //プレイヤーの移動速度を管理する変数
     public float CrouchSpeed; //プレイヤーのしゃがみ歩き時の移動速度を管理する変数
     public float RotationSpeed; //プレイヤーの視界速度を管理する変数
@@ -95,6 +99,8 @@ public class Player1 : MonoBehaviour
         }
 
 
+        float percent = (float)HP / MaxHP;
+        HPGage.fillAmount = percent;
     }
 
     void Move()
@@ -195,6 +201,7 @@ public class Player1 : MonoBehaviour
 
     void Rotation()
     {
+        //chatGPT使用
         if (isAiming)
         {
             // 🎯 エイム中 → マウス操作
